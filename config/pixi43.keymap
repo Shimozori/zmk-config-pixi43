@@ -83,7 +83,7 @@
 &kp Q             &kp W      &kp E         &kp R          &kp T                                                         &kp Y          &kp U  &kp I     &kp O     &kp P
 &kp A             &kp S      &kp D         &kp F          &kp G              &kp LS(LG(S))             &msc SCRL_LEFT   &kp H          &kp J  &kp K     &kp L     &lt 1 MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V          &kp B              &kp COLON                 &msc SCRL_RIGHT  &kp N          &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LCTRL  &kp LEFT_ALT  &kp LG(LS(S))  &mt LEFT_GUI CAPS  &mt LEFT_SHIFT SPACE      &lt 2 ENTER      &kp BACKSPACE                             &lt 6 EXSEL
+&kp TAB           &kp LCTRL  &kp LEFT_ALT  &kp LG(LS(S))  &mt LEFT_GUI CAPS  &mt LEFT_SHIFT SPACE      &lt 2 ENTER      &kp BACKSPACE                             &lt 6 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -101,8 +101,8 @@
         NUM {
             bindings = <
 &kp NUMBER_1                &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5                                                   &kp NUMBER_6      &kp N7             &kp N8      &kp N9         &kp N0
-&kp LS(SLASH)               &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp LS(NUMBER_6)  &kp LS(N7)         &kp LS(N8)  &kp SEMICOLON  &kp EQUAL
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3   &kp PERIOD  &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COMMA   &kp PERIOD     &kp BACKSLASH
+&kp LS(NUMBER_1)            &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp LS(NUMBER_6)  &kp LS(N7)         &kp LS(N8)  &kp SEMICOLON  &kp EQUAL
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3   &kp PERIOD  &kp LG(LA(EQUAL))            &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COMMA   &kp PERIOD     &kp BACKSLASH
 &trans                      &trans            &trans            &trans            &trans      &trans                       &trans          &trans                                                          &kp PIPE
             >;
         };
