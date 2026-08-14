@@ -86,7 +86,7 @@
 &kp TAB           &kp LCTRL  &kp LEFT_ALT  &kp LG(LS(S))  &mt LEFT_GUI CAPS  &mt LEFT_SHIFT SPACE      &lt 2 ENTER      &kp BACKSPACE                             &lt 6 EXSEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         FUNCTION {
