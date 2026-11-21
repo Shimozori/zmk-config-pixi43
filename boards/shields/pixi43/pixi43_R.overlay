@@ -25,7 +25,7 @@
         axis = <1>;
         layer = <3>;
 
-        scale = <4>;
+        scale = <12>;
         scale-div = <675>;
 
         swap-mod = <(MOD_LSFT | MOD_RSFT)>;
@@ -42,7 +42,7 @@
                 &zip_y_scaler (-1) 1
                 &zip_xy_to_scroll_mapper
                 &scroll_inertia
-                &zip_scroll_scaler 4 675
+                &zip_scroll_scaler 12 675
             >;
         };
     };
