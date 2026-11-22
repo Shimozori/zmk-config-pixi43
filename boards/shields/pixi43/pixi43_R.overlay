@@ -44,7 +44,6 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* Layer 3: Vertical */
         scroller_v {
             layers = <3>;
             input-processors = <
@@ -55,7 +54,6 @@
             >;
         };
 
-        /* Layer 7: Horizontal */
         scroller_h {
             layers = <7>;
             input-processors = <
