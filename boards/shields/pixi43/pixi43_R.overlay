@@ -19,35 +19,25 @@
 };
 
 / {
+    /* Layer 3: Vertical inertia scroll */
     scroll_inertia: scroll_inertia {
         compatible = "zmk,input-processor-scroll-inertia";
         #input-processor-cells = <0>;
-
         axis = <1>;
         layer = <3>;
-
         scale = <16>;
         scale-div = <675>;
-
-        swap-mod = <(MOD_LSFT | MOD_RSFT)>;
     };
 
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        scroller {
-            layers = <3>;
-            input-processors = <
-                &zip_y_scaler (-1) 1
-                &zip_xy_to_scroll_mapper
-                &scroll_inertia
-                &zip_scroll_scaler 16 675
-            >;
-        };
+    /* Layer 7: Horizontal inertia scroll */
+    scroll_inertia_h: scroll_inertia_h {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis = <2>;
+        layer = <7>;
+        scale = <16>;
+        scale-div = <675>;
     };
-};
 
 &pinctrl {
     spi0_default: spi0_default {
