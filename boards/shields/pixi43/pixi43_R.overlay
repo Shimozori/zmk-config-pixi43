@@ -29,15 +29,18 @@
         scale-div = <675>;
     };
 
-    /* Layer 7: Horizontal inertia scroll */
-    scroll_inertia_h: scroll_inertia_h {
-        compatible = "zmk,input-processor-scroll-inertia";
-        #input-processor-cells = <0>;
-        axis = <2>;
-        layer = <7>;
-        scale = <16>;
-        scale-div = <675>;
+     /* Layer 7: Horizontal scroll */
+        scroller_h {
+            layers = <7>;
+            input-processors = <
+                &zip_x_scaler (-1) 1
+                &zip_xy_to_scroll_mapper
+                &scroll_inertia_h
+                &zip_scroll_scaler 16 675
+            >;
+        };
     };
+
 
 &pinctrl {
     spi0_default: spi0_default {
