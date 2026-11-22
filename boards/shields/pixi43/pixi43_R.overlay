@@ -55,7 +55,7 @@
         scroller_h {
             layers = <7>;
             input-processors = <
-                &zip_x_scaler (-1) 1
+                &zip_x_scaler 1 1
                 &zip_xy_to_scroll_mapper
                 &scroll_inertia_h
                 &zip_scroll_scaler 16 675
